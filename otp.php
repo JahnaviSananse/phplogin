@@ -13,7 +13,7 @@ $password=$_SESSION['password'];
 $phone=$_SESSION['phone'];
 //For admin if he want to know who is register
 $to=$email;
-$subject = "Thank you!";
+$subject = "Thank you";
 $txt = "your Email id: ".$email." Mobile number : ".$phone.""." YOUR PASSWORD: ".$password;
 $headers = "From: jahnavisananse@gmail.com" . "\r\n" .
 "CC: jahnavisananse@gmail.com";

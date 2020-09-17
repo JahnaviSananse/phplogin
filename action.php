@@ -30,7 +30,7 @@ if ($resultstore) {
 <script> alert("Data Inserted Successfully..... Thank You.....");</script>
 
 <?php
-include 'pagination.php';
+//include 'pagination.php';
 }
 else{
 ?>
@@ -39,3 +39,9 @@ else{
 }
 }
 ?>
+<html>
+<body>
+    <h4> Your Data has been inserted successfully. Now, you can LOG IN.</h4><br>
+    <a href="loginForm.php">LOG IN</a>
+</body>
+</html>

@@ -2,6 +2,6 @@
 session_start();
 $_SESSION = array();
 session_destroy();
-header("location: loginForms.php");
+header("location: loginForm.php");
 exit;
 ?>

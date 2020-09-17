@@ -19,6 +19,9 @@ $headers = "From: jahnavisananse@gmail.com" . "\r\n" .
 "CC: jahnavisananse@gmail.com";
 mail($to,$subject,$txt,$headers);
 echo "<p>Thank you for submit OTP.</p>";
+$_SESSION['email']=$email;
+header( "Location: reset_password.php" );
+
 //For admin if he want to know who is register
 }
 else{
@@ -44,7 +47,6 @@ $message="<p class='w3-text-green w3-center'><b>Sucessfully resend OTP to your m
 <header>
 <title>OTP</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://studentstutorial.com/div/d.css">
 <style>
 a{
 text-decoration:none;
